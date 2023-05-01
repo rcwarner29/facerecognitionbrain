@@ -24,7 +24,7 @@ class Register extends React.Component {
 
 	onSubmitSignIn = (event) => {
 		event.preventDefault();
-		fetch('https://face-recognition-brain-vq85.onrender.com/register', {
+		fetch('https://smart-brain-tcxc.onrender.com/register', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
 			body: JSON.stringify({
