@@ -24,6 +24,7 @@ class Register extends React.Component {
 
 	onSubmitSignIn = (event) => {
 		event.preventDefault();
+		//fetch('https://smart-brain-tcxc.onrender.com/register', {
 		fetch('http://localhost:3000/register', {
 			method: 'post',
 			headers: {'Content-Type': 'application/json'},
