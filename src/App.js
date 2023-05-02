@@ -62,7 +62,8 @@ displayFaceBox = (box) => {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-    fetch('https://smart-brain-tcxc.onrender.com/imageurl', {
+    //fetch('https://smart-brain-tcxc.onrender.com/imageurl', {
+    fetch('http://localhost:3000/imageurl', {
           method: 'post',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
@@ -72,7 +73,8 @@ displayFaceBox = (box) => {
     .then(response => response.json())
     .then(response => {
       if (response) {
-        fetch('https://smart-brain-tcxc.onrender.com/image', {
+        //fetch('https://smart-brain-tcxc.onrender.com/image', {
+        fetch('http://localhost:3000/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
